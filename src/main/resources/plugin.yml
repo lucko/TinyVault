@@ -1,0 +1,17 @@
+name: Vault
+version: 1.7-tiny
+author: Luck
+main: net.milkbowl.vault.Vault
+load: startup
+api-version: 1.13
+
+commands:
+  vault-info:
+    description: Displays information about Vault
+    permission: vault.admin
+    usage: |
+      /<command> - Displays Vault information
+permissions:
+  vault.admin:
+    description: Allows use of the vault-info command.
+    default: op
